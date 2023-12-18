@@ -32,11 +32,11 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	while (first && second)
 	{
 		if (first == second)
-			return ((binary_tree_t*)first);
+			return ((binary_tree_t *)first);
 		first = first->parent;
 		second = second->parent;
 	}
-	return ((binary_tree_t*)first);
+	return ((binary_tree_t *)first);
 }
 
 /**
